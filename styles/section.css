@@ -1,3 +1,11 @@
+section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 12px 24px;
+    font: var(--text-span);
+
+}
+
+
 #featured {
     img{
         height: 100;
@@ -36,5 +44,35 @@
                 margin-top: 8px;
             }
         }
+    }
+}
+
+#weekly {
+
+    &>div {
+        grid-template-columns: repeat(4, 292px);
+    }
+
+    img {
+        height: 160px;
+    }
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+        
+        .arrow-icon {
+            width: 16px; /* Defina a largura que desejar */
+            height: auto; /* Mantém a proporção da imagem */
+            margin-left: 4px; /* Espaço entre o texto e a seta */
+            vertical-align: middle; /* Alinha a seta verticalmente com o texto */
+        }        
+              
+    }
+
+    p {
+        margin-top: 8px;
+        font-weight: 800;
     }
 }
