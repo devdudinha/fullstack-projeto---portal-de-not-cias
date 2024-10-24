@@ -3,6 +3,21 @@ section header {
     padding-block: 12px 24px;
     font: var(--text-span);
 
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+
+        span {
+            background-image: url(../assets/icones/ArrowRight.svg);
+            width: 16px;
+            height: 16px;
+        }
+
+        &:hover span {
+            background-image: url(../assets/icones/ArrowRight-hover.svg);
+        }
+    }
 }
 
 
@@ -57,22 +72,18 @@ section header {
         height: 160px;
     }
 
-    a {
-        justify-self: end;
-        align-items: center;
-        gap: 8px;
-        
-        .arrow-icon {
-            width: 16px; /* Defina a largura que desejar */
-            height: auto; /* Mantém a proporção da imagem */
-            margin-left: 4px; /* Espaço entre o texto e a seta */
-            vertical-align: middle; /* Alinha a seta verticalmente com o texto */
-        }        
-              
-    }
+    figure {
+        position: relative;
 
-    p {
-        margin-top: 8px;
-        font-weight: 800;
+        .content-tag {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        p {
+            margin-top: 8px;
+            font-weight: 900;
+        }
     }
 }
